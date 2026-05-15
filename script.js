@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showLoading();
 
     try {
-      const response = await fetch(`${API_URL}${movieName}`);
+      const response = await fetch(
+        `${API_URL}${encodeURIComponent(movieName)}`,
+      );
 
       if (!response.ok) {
         throw new Error("Failed to fetch data");
