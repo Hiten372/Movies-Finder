@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 ? movie.Poster
                 : "https://via.placeholder.com/300x450?text=No+Image"
             }"
-            alt="${movie.Title}"
+            alt="${movie.Title} Poster"
+            loading="lazy"
             class="movie-poster"
           />
 
